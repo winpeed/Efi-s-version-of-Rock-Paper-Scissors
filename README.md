@@ -2,6 +2,6 @@
 Efi's version of the rock, paper, scissors game
 
 #Concepts Explored in this project
-SVG Images
-Add Event Listeners
-DOM Manipulation (particularly querySelector and getElementsByClassName)
+1. SVG Images
+2. Add Event Listeners
+3. DOM Manipulation (particularly querySelector and getElementsByClassName)
