@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Efi's version of Rock, Papers, Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Efi's model of Rock, Paper, Scissors</h1>
+    </header>
+
+    <main>
+      <section class="registration">
+        <form id="name-form">
+          <label>Your name</label><br />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="input-name"
+            required
+          /><br />
+          <button type="submit" class="btn btn-link">
+            Enter <img src="arrow.svg" alt="Arrow SVG" />
+          </button>
+        </form>
+      </section>
+
+      <section class="rules">
+        <article class="rules-content">
+          <h2 id="welcome-address"></h2>
+          <div>
+            <h3>Rules of the game</h3>
+            <ol>
+              <li>
+                Rock ✊ <em><b>"crushes"</b></em> Scissors ✂️
+              </li>
+              <li>
+                Paper 🧻 <em><b>"covers"</b></em> Rock ✊
+              </li>
+              <li>
+                Scissors ✂️ <em><b>"cuts"</b></em> Paper 🧻
+              </li>
+              <li>For every win, the winner gets one(1) point</li>
+              <li>No marks are awarded for draws</li>
+              <li>The first to earn 10 points wins the game</li>
+            </ol>
+          </div>
+          <button type="submit" id="begin" class="btn btn-link">
+            begin<img src="arrow.svg" alt="Arrow SVG" />
+          </button>
+        </article>
+      </section>
+
+      <section class="players">
+        <article>
+          <h5 class="instruct">
+            Start game by tapping any of the icons below (Remember the rules😉)
+          </h5>
+        </article>
+        <article class="players-content">
+          <div class="left">
+            <div id="playerone-icons">
+              <p class="one-icons">✊</p>
+              <p class="one-icons">🧻</p>
+              <p class="one-icons">✂️</p>
+            </div>
+            <!-- <img src="" alt="Default Rock" /> -->
+          </div>
+          <div class="center">
+            <p id="playertwo-elem" class="two-icons"></p>
+
+            <!-- <img src="" alt="Default Rock" /> -->
+          </div>
+        </article>
+        <article class="scores">
+          <div class="scores-content">
+            <div>
+              <label id="playerone-name"></label>
+              <p id="playerone-score" class="one-icons"></p>
+            </div>
+
+            <div>
+              <label id="playertwo-name"></label>
+              <p id="playertwo-score" class="one-icons"></p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="result-content">
+        <h2 id="declare-winner"></h2>
+        <button id="restart" class="btn btn-shoot">Restart</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This weather app was created by
+        <a href="https://www.linkedin.com/in/winpeed/" target="_blank"
+          >Praise Obende</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/winpeed/Rock-Paper-Scissors-VanillaJS"
+          target="_blank"
+        >
+          GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
